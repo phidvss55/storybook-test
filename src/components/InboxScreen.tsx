@@ -10,6 +10,7 @@ const InboxScreen: React.FC = () => {
 
   useEffect(() => {
     dispatch(fetchTasks());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   if (error) {
