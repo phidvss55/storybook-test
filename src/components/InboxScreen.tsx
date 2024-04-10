@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import TaskList from "./TaskList";
 import { useAppDispatch, useAppSelector } from "../redux/hook";
 import { fetchTasks } from "../common/helpers";
+import InputList from "./InputList";
 
 const InboxScreen: React.FC = () => {
   const dispatch = useAppDispatch();
@@ -27,6 +28,7 @@ const InboxScreen: React.FC = () => {
       <nav>
         <h1 className="title-page">Taskbox</h1>
       </nav>
+      <InputList />
       <TaskList />
     </div>
   );
